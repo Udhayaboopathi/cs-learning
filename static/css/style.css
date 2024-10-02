@@ -150,6 +150,14 @@
     }
 }
 
+<<<<<<< HEAD
+=======
+.nav-link.active {
+    color: #007bff; /* Change to your desired color */
+    font-weight: bold; /* Optional: make it bold */
+}
+
+>>>>>>> 199c629 (Updated download link with alert message)
 
 /*** Header carousel ***/
 @media (max-width: 768px) {

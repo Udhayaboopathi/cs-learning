@@ -6,9 +6,15 @@ app = Flask(__name__)
 
 # Configure Flask Mail
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+<<<<<<< HEAD
 app.config['MAIL_PORT'] = 587  # Port for TLS
 app.config['MAIL_USE_TLS'] = True  # Enable TLS
 app.config['MAIL_USE_SSL'] = False  # Disable SSL
+=======
+app.config['MAIL_PORT'] = 587  
+app.config['MAIL_USE_TLS'] = True 
+app.config['MAIL_USE_SSL'] = False 
+>>>>>>> 199c629 (Updated download link with alert message)
 app.config['MAIL_USERNAME'] = 'academynexusgasc@gmail.com'
 app.config['MAIL_PASSWORD'] = 'adrt arwc frtn sklk'
 app.config['MAIL_DEFAULT_SENDER'] = 'AcademyNexusGASC <academynexusgasc@gmail.com>'
@@ -29,9 +35,19 @@ def index():
 def about():
     return render_template('about.html')
 
+<<<<<<< HEAD
 @app.route('/materials')
 def materials():
     return render_template('materials.html')
+=======
+@app.route('/materials_MCA')
+def materials_MCA():
+    return render_template('materials_MCA.html')
+
+@app.route('/materials_CS')
+def materials_CS():
+    return render_template('materials_CS.html')
+>>>>>>> 199c629 (Updated download link with alert message)
 
 @app.route('/team')
 def team():
